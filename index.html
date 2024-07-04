@@ -5,80 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Bilal - Curriculum Vitae</title>
     <style>
+        /* Basic styling for the CV */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
             padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2, h3 {
-            color: #555;
-            margin-bottom: 10px;
-        }
-        p {
-            margin-bottom: 10px;
+            margin: auto;
         }
         .section {
             margin-bottom: 20px;
         }
-        .section-header {
+        .section h2 {
             margin-bottom: 10px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
+            font-size: 1.5em;
+            color: #333;
         }
-        .section-content {
-            margin-left: 20px;
+        .section p {
+            margin: 0;
         }
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        .contact-info p {
-            margin-bottom: 5px;
-        }
-        .profile-summary {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-        .education {
-            margin-bottom: 20px;
-        }
-        .work-experience {
-            margin-bottom: 20px;
-        }
-        .skills-list {
-            margin-bottom: 20px;
-        }
-        .projects {
-            margin-bottom: 20px;
-        }
-        .achievements {
-            margin-bottom: 20px;
-        }
-        .certifications {
-            margin-bottom: 20px;
+        .section ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Muhammad Bilal</h1>
-            <p>Email: bilal45.grt@gmail.com | Phone: +923136266066 | LinkedIn: <a href="https://www.linkedin.com/in/muhammadbilal-gujrat/" target="_blank">LinkedIn Profile</a></p>
-        </header>
+        <section class="section" id="personal-information">
+            <h2>Personal Information</h2>
+            <p><strong>Full Name:</strong> Muhammad Bilal</p>
+            <p><strong>Nationality:</strong> Pakistani</p>
+            <p><strong>Contact Address:</strong> Gujrat, Pakistan</p>
+            <p><strong>Phone Number:</strong> +92 3136266066</p>
+            <p><strong>Email Address:</strong> <a href="mailto:bilal45.grt@gmail.com">bilal45.grt@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/muhammadbilal-gujrat/">Muhammad Bilal</a></p>
+        </section>
 
         <section class="profile-summary">
-            <h2>Profile Summary</h2>
-            <p>I am a software developer specializing in the analysis, design, and development of business applications using modern technologies such as ASP.NET MVC, C#, Entity Framework, and more. Experienced in ASP.NET Core development and SQL Server.</p>
+            <h2>Professional Summary</h2>
+            <p>Experienced software developer proficient in analysis, design, development, and implementation of business applications using cutting-edge technologies. Skilled in ASP.NET MVC, C#, Entity Framework, HTML/CSS/JavaScript, and ASP.NET Web API. Currently, I am working part-time as an Associate DevOps Engineer, leveraging Linux, GitHub, and Docker to drive innovation and efficiency in tech solutions. Seeking to advance within an international company to further develop DevOps expertise and contribute to impactful global solutions.</p>
+        </section>
+
+        <section class="section" id="work-experience">
+            <h2>Work Experience</h2>
+            <article>
+                <h3>Associate DevOps Engineer</h3>
+                <p><strong>Adan IT Center, Gujrat</strong></p>
+                <p><strong>June 2024 – Present</strong></p>
+                <ul>
+                    <li>Managing remote servers with Linux environments.</li>
+                    <li>Utilizing tools like Git, GitHub, Docker, and VS Code for development and deployment.</li>
+                    <li>Implementing DevOps best practices to enhance system efficiency and reliability.</li>
+                    <li>Collaborating with cross-functional teams to drive continuous improvement and automation.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Back-end Web Developer</h3>
+                <p><strong>Unity Infotech, Dubai</strong></p>
+                <p><strong>Apr 2024 – Present</strong></p>
+                <ul>
+                    <li>Developing and maintaining web applications using ASP.NET Core and related technologies.</li>
+                    <li>Utilizing HTML, CSS, JavaScript, and other front-end technologies.</li>
+                    <li>Managing version control and project collaboration using Git and GitHub.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>ERP System Developer</h3>
+                <p><strong>Softpins, Gujrat</strong></p>
+                <p><strong>Apr 2022 – Dec 2023</strong></p>
+                <ul>
+                    <li>Developed and maintained ERP system modules using ASP.NET and SQL Server.</li>
+                    <li>Implemented business logic and database integration.</li>
+                    <li>Collaborated with team members to ensure project milestones and deadlines were met.</li>
+                </ul>
+            </article>
         </section>
 
         <section class="education">
@@ -87,14 +91,9 @@
             <p>Virtual University of Pakistan, 2017 - 2021</p>
         </section>
 
-        <section class="work-experience">
-            <h2>Work Experience</h2>
-            <p>Current: ASP.NET Core Developer at Unity Infotech (Apr 2024 - Present)</p>
-            <p>Past: ERP System Developer at Softpins(Apr 2022 - Dec 2023)</p>
-        </section>
-
-        <section class="skills-list">
+        <section class="section" id="skills">
             <h2>Skills</h2>
+            <p><strong>Technical Skills:</strong></p>
             <ul>
                 <li>ASP.NET MVC</li>
                 <li>C#.NET</li>
@@ -103,23 +102,14 @@
                 <li>ASP.NET Web API</li>
                 <li>Microsoft SQL Server</li>
                 <li>Git Version Control</li>
+                <li>Operating Systems: Ubuntu, Almalinux</li>
+                <li>Version Control: Git, GitHub</li>
+                <li>Containerization: Dockerized containers</li>
+                <li>Web Development: HTML, CSS, JavaScript</li>
+                <li>IDE: Visual Studio Code</li>
             </ul>
+            <p><strong>Languages:</strong> English (Proficient), Urdu (Native)</p>
         </section>
-
-        <section class="projects">
-            <h2>Projects</h2>
-            <p>Current: Dubai Bank Application (describe your role and technologies used)</p>
-            <p>Past: ERP System (describe your role and technologies used)</p>
-        </section>
-
-        <section class="certifications">
-            <h2>Licenses & Certifications</h2>
-            <p>Master ASP.NET Core Identity: Authentication & Authorization - Udemy, Issued Nov 2023, Credential ID UC-8aab96f1-d1f2-4236-9e40-60c79c5f6a21</p>
-        </section>
-
-        <footer>
-            <p>References available upon request.</p>
-        </footer>
     </div>
 </body>
 </html>
